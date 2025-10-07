@@ -420,7 +420,7 @@
             font-size: 70px;
         }
         & a{
-            background: linear-gradient(#D0FF71, #D0FF71) left no-repeat, #fff;
+            background: linear-gradient(#F9B346, #F9B346) left no-repeat, #fff;
             background-size: 0% 100%;
             background-clip: text;
             -webkit-background-clip: text;
@@ -491,8 +491,8 @@
         &:hover{
             & .creative-service-link{
                 & a{
-                    border-color: #D0FF71;
-                    background-color: #D0FF71;
+                    border-color: #F9B346;
+                    background-color: #F9B346;
                     color: var(--tp-common-black);
                 }
             }
@@ -508,7 +508,7 @@
             &:hover {
                 & .creative-service-link {
                     & a{
-                        background-color: #ff5722;
+                        background-color: #F9B346;
                         color: var(--tp-common-white);
                         border: 1px solid rgb(255, 87, 34);
                     }
@@ -536,7 +536,7 @@
                         font-size: 70px;
                     }
                     & a{
-                        background: linear-gradient(#FF5722, #FF5722) left no-repeat, #111013;
+                        background: linear-gradient(#F9B346, #F9B346) left no-repeat, #111013;
                         background-size: auto, auto;
                         background-clip: border-box, border-box;
                         background-size: 0% 100%;

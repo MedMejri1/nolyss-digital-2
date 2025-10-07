@@ -169,7 +169,7 @@
         border-color: rgba(0, 0, 0, 0.2);
     }
     & .creative-service-item.about-us-4 .creative-service-title a{
-        background: linear-gradient(#D0FF71, #D0FF71) left no-repeat, #111013;
+        background: linear-gradient(#F9B346, #F9B346) left no-repeat, #111013;
         background-size: auto, auto;
         background-clip: border-box, border-box;
         background-size: 0% 100%;
@@ -180,7 +180,7 @@
         background-size: 100% 100%;
     }
     & .creative-service-item.about-us-4:hover .creative-service-link a {
-        background-color: #d0ff71;
+        background-color: #F9B346;
         color: var(--tp-common-black);
         border: 1px solid rgb(208, 255, 113);
     }
@@ -1371,13 +1371,13 @@
         }
     }
     & .basic-pagination ul li .current {
-        border-color: #FF5722;
-        background-color: #FF5722;
+        border-color: #F9B346;
+        background-color: #F9B346;
         color: var(--tp-common-white);
     }
     & .basic-pagination ul li:hover a {
-        border-color: #FF5722;
-        background-color: #FF5722;
+        border-color: #F9B346;
+        background-color: #F9B346;
         color: var(--tp-common-white);
     }
     & .blog-footer-style {
@@ -1385,7 +1385,7 @@
             & .tp-footer-widget-social {
                 & a {
                     color: var(--tp-common-white);
-                    background-color: #FF5722;
+                    background-color: #F9B346;
                 }
             }
             & .tp-footer-widget-menu {
@@ -1585,7 +1585,7 @@
 	}
 	& .creative-footer-style .tp-footer-widget-social a {
         color: var(--tp-common-black);
-		background-color: #d0ff71;
+		background-color: #F9B346;
     }
 	& .tp-section-title-teko.fs-80 span {
 		color: rgba(0, 0, 0, 0.3);
@@ -1914,7 +1914,7 @@
 		color: var(--tp-common-black);
 	}
 	& .tp-blog-heading-wrap .tp-section-subtitle.pre::before {
-		background: #ff5722;
+		background: #F9B346;
 	}
 	& .tp-blog-title a {
 		background-color: #F6F6F9;
@@ -1957,7 +1957,7 @@
 		color: var(--tp-common-black);
 	}
 	& .tp-blog-masonry-btn a {
-		color: #ff5722;
+		color: #F9B346;
 	}
 	& .tp-blog-masonry-item-2 {
 		background: #F6F6F9;
@@ -1999,7 +1999,7 @@
 		background-color: rgba(0, 0, 0, 0.6);
 	}
 	& .postbox-details-text p span {
-		color: #ff5722;
+		color: #F9B346;
 	}
 	& .postbox-details-list ul li {
 		color: rgba(0, 0, 0, 0.7);
