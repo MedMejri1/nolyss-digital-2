@@ -37,13 +37,13 @@
 
   <!-- **** AJOUTS MINIMAUX POUR MASQUER QUANTITÉ & TOTAL (sans supprimer le code) **** -->
   <style>
-    /* Cache la colonne 4 "Quantité" dans toutes les tables */
-    .tp_devis_table th:nth-child(4),
-    .tp_devis_table td:nth-child(4){display:none !important;}
-
-    /* Cache seulement l'input du total ; le label sera masqué via JS (cf. plus bas) */
-    #tp-total{display:none !important;}
-  </style>
+/* Cache la colonne 4 "Quantité" dans toutes les tables */ .tp_devis_table th:nth-child(4), .tp_devis_table td:nth-child(4){display:none !important;} /* Cache seulement l'input du total ; le label sera masqué via JS (cf. plus bas) */ #tp-total{display:none !important;}
+  /* Afficher la colonne Quantité SEULEMENT dans la table 6 (Impression & Supports physiques) */
+  #panel-print .tp_devis_table th:nth-child(4),
+  #panel-print .tp_devis_table td:nth-child(4){
+    display: table-cell !important;
+  }
+</style>
 </head>
 
 <body class="tp-magic-cursor">
@@ -255,7 +255,7 @@
                                         <th style="width:40px;">✔</th>
                                         <th>Service</th>
                                         <th>Détail / Objectif</th>
-                                        <th style="width:120px;">Quantité</th>
+                                        <!-- <th style="width:120px;">Quantité</th> -->
                                         <th>Remarques</th>
                                       </tr>
                                     </thead>
@@ -264,35 +264,35 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="creation_logo" data-price="450"></td>
                                         <td>Création de logo</td>
                                         <td>Design original, déclinaisons noir/blanc et couleur</td>
-                                        <td><input class="tp-qty" type="number" name="qty_creation_logo" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_creation_logo" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_creation_logo" rows="2" placeholder="Précisions..." style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="charte_graphique" data-price="650"></td>
                                         <td>Charte graphique</td>
                                         <td>Police, couleurs, guide d’usage</td>
-                                        <td><input class="tp-qty" type="number" name="qty_charte_graphique" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_charte_graphique" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_charte_graphique" rows="2" placeholder="Précisions..." style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="branding_complet" data-price="1600"></td>
                                         <td>Branding complet</td>
                                         <td>Logo, charte, supports (signature mail, print, templates réseaux sociaux…)</td>
-                                        <td><input class="tp-qty" type="number" name="qty_branding_complet" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_branding_complet" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_branding_complet" rows="2" placeholder="Précisions..." style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="rebranding" data-price="900"></td>
                                         <td>Rebranding</td>
                                         <td>Modernisation ou refonte d’identité existante</td>
-                                        <td><input class="tp-qty" type="number" name="qty_rebranding" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_rebranding" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_rebranding" rows="2" placeholder="Précisions..." style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="autres" data-price="0"></td>
                                         <td>Autres</td>
                                         <td><input type="text" name="autres_detail" placeholder="Décrivez votre besoin…" style="width:100%;"></td>
-                                        <td><input class="tp-qty" type="number" name="qty_autres" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_autres" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_autres" rows="2" placeholder="Précisions..." style="width:100%;"></textarea></td>
                                       </tr>
                                     </tbody>
@@ -315,7 +315,7 @@
                                         <th style="width:40px;">✔</th>
                                         <th>Service</th>
                                         <th>Détail / Objectif</th>
-                                        <th style="width:120px;">Quantité</th>
+                                        <!-- <th style="width:120px;">Quantité</th> -->
                                         <th>Remarques</th>
                                       </tr>
                                     </thead>
@@ -324,35 +324,35 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="social_creation_pages" data-price="200"></td>
                                         <td>Création de pages / comptes</td>
                                         <td>Mise en place ou optimisation des profils professionnel</td>
-                                        <td><input class="tp-qty" type="number" name="qty_social_creation_pages" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_social_creation_pages" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_social_creation_pages" rows="2" placeholder="Réseaux ciblés, langues…" style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="social_community_management" data-price="350"></td>
                                         <td>Gestion de communauté</td>
                                         <td>Création de contenu, modération, engagement</td>
-                                        <td><input class="tp-qty" type="number" name="qty_social_community_management" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_social_community_management" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_social_community_management" rows="2" placeholder="Volume de posts / mois, plateformes…" style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="social_content_creation" data-price="300"></td>
                                         <td>Création de contenus visuels</td>
                                         <td>Photos, vidéos, carrousels, stories, reels</td>
-                                        <td><input class="tp-qty" type="number" name="qty_social_content_creation" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_social_content_creation" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_social_content_creation" rows="2" placeholder="Formats, durée, nombre d’assets…" style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="social_comms_plan" data-price="450"></td>
                                         <td>Plan de communication digital</td>
                                         <td>Calendrier éditorial, stratégie d’audience, rapports ADS</td>
-                                        <td><input class="tp-qty" type="number" name="qty_social_comms_plan" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_social_comms_plan" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_social_comms_plan" rows="2" placeholder="Période, canaux, objectifs…" style="width:100%;"></textarea></td>
                                       </tr>
                                       <tr>
                                         <td><input type="checkbox" class="service-check" name="services[]" value="social_autres" data-price="0"></td>
                                         <td>Autres</td>
                                         <td><input type="text" name="social_autres_detail" placeholder="Décrivez votre besoin…" style="width:100%;"></td>
-                                        <td><input class="tp-qty" type="number" name="qty_social_autres" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_social_autres" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_social_autres" rows="2" placeholder="Précisions…" style="width:100%;"></textarea></td>
                                       </tr>
                                     </tbody>
@@ -376,7 +376,7 @@
                                         <th style="width:40px;">✔</th>
                                         <th>Service</th>
                                         <th>Détail / Objectif</th>
-                                        <th style="width:120px;">Quantité</th>
+                                        <!-- <th style="width:120px;">Quantité</th> -->
                                         <th>Remarques</th>
                                       </tr>
                                     </thead>
@@ -385,7 +385,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="site_vitrine" data-price="900"></td>
                                         <td>Site vitrine</td>
                                         <td>Présentation de l’entreprise / services / contact</td>
-                                        <td><input class="tp-qty" type="number" name="qty_site_vitrine" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_site_vitrine" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_site_vitrine" rows="2" placeholder="Nb de pages, langue(s)..." style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -393,7 +393,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="site_ecommerce" data-price="1800"></td>
                                         <td>Site e-commerce</td>
                                         <td>Vente en ligne avec back-office</td>
-                                        <td><input class="tp-qty" type="number" name="qty_site_ecommerce" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_site_ecommerce" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_site_ecommerce" rows="2" placeholder="Catalogue, moyens de paiement..." style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -401,7 +401,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="landing_page" data-price="450"></td>
                                         <td>Landing page</td>
                                         <td>Page unique pour campagne marketing</td>
-                                        <td><input class="tp-qty" type="number" name="qty_landing_page" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_landing_page" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_landing_page" rows="2" placeholder="Objectif, intégrations (form, pixel…)" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -409,7 +409,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="hebergement_maintenance" data-price="25"></td>
                                         <td>Hébergement &amp; maintenance</td>
                                         <td>Suivi technique, mises à jour</td>
-                                        <td><input class="tp-qty" type="number" name="qty_hebergement_maintenance" min="1" value="12" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_hebergement_maintenance" min="1" value="12" style="width:100%;"></td> -->
                                         <td><textarea name="remark_hebergement_maintenance" rows="2" placeholder="Mensuel / annuel, SLA..." style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -417,7 +417,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="referencement_seo" data-price="300"></td>
                                         <td>Référencement SEO</td>
                                         <td>Optimisation moteur de recherche</td>
-                                        <td><input class="tp-qty" type="number" name="qty_referencement_seo" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_referencement_seo" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_referencement_seo" rows="2" placeholder="Audit, mots-clés, pages..." style="width:100%;"></textarea></td>
                                       </tr>
                                     </tbody>
@@ -441,7 +441,7 @@
                                         <th style="width:40px;">✔</th>
                                         <th>Service</th>
                                         <th>Détail / Objectif</th>
-                                        <th style="width:120px;">Quantité</th>
+                                        <!-- <th style="width:120px;">Quantité</th> -->
                                         <th>Remarques</th>
                                       </tr>
                                     </thead>
@@ -450,7 +450,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="campagne_meta_ads" data-price="280"></td>
                                         <td>Campagne Meta ADS</td>
                                         <td>Publicité Facebook / Instagram</td>
-                                        <td><input class="tp-qty" type="number" name="qty_campagne_meta_ads" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_campagne_meta_ads" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_campagne_meta_ads" rows="2" placeholder="Objectif, audience, budget média…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -458,7 +458,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="campagne_google_ads" data-price="320"></td>
                                         <td>Campagne Google Ads</td>
                                         <td>Publicité moteur de recherche</td>
-                                        <td><input class="tp-qty" type="number" name="qty_campagne_google_ads" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_campagne_google_ads" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_campagne_google_ads" rows="2" placeholder="Réseau (Search/Display), mots-clés, budget…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -466,7 +466,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="email_marketing" data-price="180"></td>
                                         <td>E-mail marketing</td>
                                         <td>Création + envoi de newsletters</td>
-                                        <td><input class="tp-qty" type="number" name="qty_email_marketing" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_email_marketing" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_email_marketing" rows="2" placeholder="Nb d’emails, outils (Mailchimp…), cible…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -474,7 +474,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="hebergement_maintenance_ads" data-price="40"></td>
                                         <td>Hébergement &amp; maintenance</td>
                                         <td>Campagnes ciblées</td>
-                                        <td><input class="tp-qty" type="number" name="qty_hebergement_maintenance_ads" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_hebergement_maintenance_ads" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_hebergement_maintenance_ads" rows="2" placeholder="Suivi mensuel, reporting…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -482,7 +482,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="retargeting_remarketing" data-price="220"></td>
                                         <td>Retargeting / remarketing</td>
                                         <td>Optimisation des conversions</td>
-                                        <td><input class="tp-qty" type="number" name="qty_retargeting_remarketing" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_retargeting_remarketing" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_retargeting_remarketing" rows="2" placeholder="Pixels, audiences, fenêtres, plateformes…" style="width:100%;"></textarea></td>
                                       </tr>
                                     </tbody>
@@ -506,7 +506,7 @@
                                         <th style="width:40px;">✔</th>
                                         <th>Service</th>
                                         <th>Détail / Objectif</th>
-                                        <th style="width:120px;">Quantité</th>
+                                        <!-- <th style="width:120px;">Quantité</th> -->
                                         <th>Remarques</th>
                                       </tr>
                                     </thead>
@@ -515,7 +515,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="shooting_photo" data-price="250"></td>
                                         <td>Shooting photo</td>
                                         <td>Prises de vue produits, portraits, évènementiel</td>
-                                        <td><input class="tp-qty" type="number" name="qty_shooting_photo" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_shooting_photo" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_shooting_photo" rows="2" placeholder="Nb d’images, lieu, style…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -523,7 +523,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="tournage_video" data-price="600"></td>
                                         <td>Tournage vidéo</td>
                                         <td>Captation, script, tournage sur site/studio</td>
-                                        <td><input class="tp-qty" type="number" name="qty_tournage_video" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_tournage_video" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_tournage_video" rows="2" placeholder="Durée, format, voix-off…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -531,7 +531,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="motion_design" data-price="500"></td>
                                         <td>Motion design</td>
                                         <td>Animation 2D/3D, titrage, habillages</td>
-                                        <td><input class="tp-qty" type="number" name="qty_motion_design" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_motion_design" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_motion_design" rows="2" placeholder="Durée, style, livrables…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -539,7 +539,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="montage_video" data-price="200"></td>
                                         <td>Montage vidéo</td>
                                         <td>Découpe, étalonnage, sous-titres, exports</td>
-                                        <td><input class="tp-qty" type="number" name="qty_montage_video" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_montage_video" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_montage_video" rows="2" placeholder="Sources, formats, musiques…" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -547,7 +547,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="av_autres" data-price="0"></td>
                                         <td>Autres</td>
                                         <td><input type="text" name="av_autres_detail" placeholder="Décrivez votre besoin…" style="width:100%;"></td>
-                                        <td><input class="tp-qty" type="number" name="qty_av_autres" min="1" value="1" style="width:100%;"></td>
+                                        <!-- <td><input class="tp-qty" type="number" name="qty_av_autres" min="1" value="1" style="width:100%;"></td> -->
                                         <td><textarea name="remark_av_autres" rows="2" placeholder="Précisions…" style="width:100%;"></textarea></td>
                                       </tr>
                                     </tbody>
@@ -580,7 +580,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="cartes_visite" data-price="60"></td>
                                         <td>Cartes de visite</td>
                                         <td>Impression recto verso</td>
-                                        <td><input class="tp-qty" type="number" name="qty_cartes_visite" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_cartes_visite" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_cartes_visite" rows="2" placeholder="Finition, grammage, quantité (ex. x100)" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -588,7 +588,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="flyer" data-price="90"></td>
                                         <td>Flyer</td>
                                         <td>A5 / A4, quadrichromie</td>
-                                        <td><input class="tp-qty" type="number" name="qty_flyer" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_flyer" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_flyer" rows="2" placeholder="Recto/verso, papier, quantité" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -596,7 +596,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="kakemono_rollup" data-price="120"></td>
                                         <td>Kakemonos / Roll-up</td>
                                         <td>Supports PLV</td>
-                                        <td><input class="tp-qty" type="number" name="qty_kakemono_rollup" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_kakemono_rollup" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_kakemono_rollup" rows="2" placeholder="Format, structure, housse" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -604,7 +604,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="catalogue" data-price="180"></td>
                                         <td>Catalogue</td>
                                         <td>Création + impression</td>
-                                        <td><input class="tp-qty" type="number" name="qty_catalogue" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_catalogue" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_catalogue" rows="2" placeholder="Nb de pages, reliure, tirage" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -612,7 +612,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="porte_documents" data-price="85"></td>
                                         <td>Porte documents</td>
                                         <td>Cartonnés ou plastifiés avec impression personnalisée</td>
-                                        <td><input class="tp-qty" type="number" name="qty_porte_documents" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_porte_documents" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_porte_documents" rows="2" placeholder="Format, finition, quantité" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -620,7 +620,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="bloc_notes" data-price="70"></td>
                                         <td>Bloc notes</td>
                                         <td>Bloc détachable, format A5 / A4</td>
-                                        <td><input class="tp-qty" type="number" name="qty_bloc_notes" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_bloc_notes" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_bloc_notes" rows="2" placeholder="Nb de feuilles, papier, tirage" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -628,7 +628,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="stylos" data-price="50"></td>
                                         <td>Stylos</td>
                                         <td>Stylos avec logo gravé ou imprimé</td>
-                                        <td><input class="tp-qty" type="number" name="qty_stylos" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_stylos" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_stylos" rows="2" placeholder="Couleur, modèle, quantité (x100…)" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -636,7 +636,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="drapeaux_pub" data-price="140"></td>
                                         <td>Flag / Drapeaux publicitaires</td>
                                         <td>Beach flag, oriflamme, drapeau sur pied</td>
-                                        <td><input class="tp-qty" type="number" name="qty_drapeaux_pub" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_drapeaux_pub" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_drapeaux_pub" rows="2" placeholder="Taille, pied, recto/verso" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -644,7 +644,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="packaging_perso" data-price="160"></td>
                                         <td>Packaging personnalisé</td>
                                         <td>Boîtes, sacs, étiquettes</td>
-                                        <td><input class="tp-qty" type="number" name="qty_packaging_perso" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_packaging_perso" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_packaging_perso" rows="2" placeholder="Formats, matières, quantités" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -652,7 +652,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="panneaux_signaletiques" data-price="130"></td>
                                         <td>Panneaux signalétiques</td>
                                         <td>PVC / Dibond / Plexiglas</td>
-                                        <td><input class="tp-qty" type="number" name="qty_panneaux_signaletiques" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_panneaux_signaletiques" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_panneaux_signaletiques" rows="2" placeholder="Dimensions, perçage, pose" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -660,7 +660,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="stickers_etiquettes" data-price="65"></td>
                                         <td>Stickers / Étiquettes</td>
                                         <td>Toutes tailles et formes</td>
-                                        <td><input class="tp-qty" type="number" name="qty_stickers_etiquettes" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_stickers_etiquettes" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_stickers_etiquettes" rows="2" placeholder="Découpe, matière, quantité" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -668,7 +668,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="textile_goodies" data-price="110"></td>
                                         <td>T-shirts, casquettes, goodies</td>
                                         <td>Sérigraphie ou transfert numérique</td>
-                                        <td><input class="tp-qty" type="number" name="qty_textile_goodies" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_textile_goodies" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_textile_goodies" rows="2" placeholder="Tailles, modèles, couleurs" style="width:100%;"></textarea></td>
                                       </tr>
 
@@ -676,7 +676,7 @@
                                         <td><input type="checkbox" class="service-check" name="services[]" value="print_autres" data-price="0"></td>
                                         <td>Autres</td>
                                         <td><input type="text" name="print_autres_detail" placeholder="Décrivez le support (ex. bâche, brochure, carte PVC…)" style="width:100%;"></td>
-                                        <td><input class="tp-qty" type="number" name="qty_print_autres" min="1" value="1" style="width:100%;"></td>
+                                        <td><input class="tp-qty" type="number" name="qty_print_autres" min="1" value="0" style="width:100%;"></td>
                                         <td><textarea name="remark_print_autres" rows="2" placeholder="Format, matière, finitions, délais…" style="width:100%;"></textarea></td>
                                       </tr>
                                     </tbody>
@@ -939,30 +939,33 @@
   const form = document.getElementById('contact-form');
   const responseEl = document.querySelector('.ajax-response');
 
-  function buildSelectedServices() {
+ function buildSelectedServices() {
     const lines = [];
     form.querySelectorAll('.tp_devis_table tbody tr').forEach(row => {
       const chk = row.querySelector('.service-check');
       if (chk && chk.checked) {
-        const serviceName = (row.cells?.[1]?.innerText || '').trim();  // Col. "Service"
-        // Col. "Détail / Objectif": texte statique ou input text
+        const serviceName = (row.cells?.[1]?.innerText || '').trim();         // Col. Service
+        // Col. Détail / Objectif : texte statique ou input text
         let detail = '';
         const detailCell = row.cells?.[2];
         if (detailCell) {
           const inputText = detailCell.querySelector('input[type="text"]');
           detail = (inputText ? inputText.value : detailCell.innerText || '').trim();
         }
+        const qty = parseInt((row.querySelector('.tp-qty')?.value || '1'), 10) || 1; // <-- NOUVEAU
         const remark = (row.querySelector('textarea')?.value || '').trim();
 
         const line =
           `• ${serviceName}` +
           (detail ? ` — ${detail}` : '') +
+          ` (Qté: ${qty})` +                                            // <-- NOUVEAU
           (remark ? ` (Remarque: ${remark})` : '');
         lines.push(line);
       }
     });
     return lines;
   }
+  
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault(); // on ne poste pas vers assets/mail.php
