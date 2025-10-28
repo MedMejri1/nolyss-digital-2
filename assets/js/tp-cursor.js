@@ -116,7 +116,7 @@ if ($("body").not(".is-mobile").hasClass("tp-magic-cursor")) {
         myFunction('#FFF')
     }
     if(document.querySelector('.cursor-bg-yellow')){
-        myFunction('#F9B346')
+        myFunction('#F5A841')
     }
     // Show/hide magic cursor // 
 

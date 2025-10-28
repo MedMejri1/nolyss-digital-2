@@ -182,7 +182,7 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             &:hover,
             &.active{
-                background-color: #F9B346;
+                background-color: #F5A841;
                 color: var(--tp-common-black-7);
             }
             @media #{$xs} {
@@ -657,7 +657,7 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 8px;
-                    background-color: #F9B346;
+                    background-color: #F5A841;
                 }
             }
         }
@@ -723,14 +723,14 @@
                         border-color: #1D1D1F;
                         color: var(--tp-common-white);
                         &:focus{
-                            border-color: #F9B346;
+                            border-color: #F5A841;
                             background-color: var(--tp-common-black-7);
                         }
                     }
                 }
                 &-btn{
                     & button{
-                        background-color: #F9B346;
+                        background-color: #F5A841;
                         color: var(--tp-common-black-7);
                     }
                 }

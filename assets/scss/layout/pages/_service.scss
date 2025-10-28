@@ -420,7 +420,7 @@
             font-size: 70px;
         }
         & a{
-            background: linear-gradient(#F9B346, #F9B346) left no-repeat, #fff;
+            background: linear-gradient(#F5A841, #F5A841) left no-repeat, #fff;
             background-size: 0% 100%;
             background-clip: text;
             -webkit-background-clip: text;
@@ -491,8 +491,8 @@
         &:hover{
             & .creative-service-link{
                 & a{
-                    border-color: #F9B346;
-                    background-color: #F9B346;
+                    border-color: #F5A841;
+                    background-color: #F5A841;
                     color: var(--tp-common-black);
                 }
             }
@@ -508,7 +508,7 @@
             &:hover {
                 & .creative-service-link {
                     & a{
-                        background-color: #F9B346;
+                        background-color: #F5A841;
                         color: var(--tp-common-white);
                         border: 1px solid rgb(255, 87, 34);
                     }
@@ -536,7 +536,7 @@
                         font-size: 70px;
                     }
                     & a{
-                        background: linear-gradient(#F9B346, #F9B346) left no-repeat, #111013;
+                        background: linear-gradient(#F5A841, #F5A841) left no-repeat, #111013;
                         background-size: auto, auto;
                         background-clip: border-box, border-box;
                         background-size: 0% 100%;
@@ -2635,7 +2635,7 @@
             display: inline-block;
             letter-spacing: -0.16px;
             text-transform: uppercase;
-            border: 1px solid #F9B346;
+            border: 1px solid #F5A841;
             transform: translateY(-24px);
             font-family: var(--tp-ff-p);
             background: var(--tp-common-yellow-1);

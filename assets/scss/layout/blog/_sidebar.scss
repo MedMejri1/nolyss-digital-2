@@ -26,7 +26,7 @@
             }
             &:focus{
                 background-color: #0E0F11;
-                border: 1px solid #F9B346;
+                border: 1px solid #F5A841;
             }
         }
         & button{
@@ -37,7 +37,7 @@
             line-height: 60px;
             color: var(--tp-common-white);
             &:hover{
-                color: #F9B346;
+                color: #F5A841;
             }
         }
 
@@ -89,7 +89,7 @@
                     }
                     &:hover{
                         & span{
-                            color: #F9B346;
+                            color: #F5A841;
                         }
                     }
                 }
@@ -124,10 +124,10 @@
                             }
                         }
                         &:hover{
-                            color: #F9B346;
+                            color: #F5A841;
                             & span{
                                 &:last-child{
-                                    color: #F9B346;
+                                    color: #F5A841;
                                 }
                             }
                         }
@@ -180,7 +180,7 @@
         }
         &:hover{
             color: var(--tp-common-black);
-            background-color: #F9B346;
+            background-color: #F5A841;
         }
     }
 }
